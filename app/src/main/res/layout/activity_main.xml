@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.example.ahmedmamdouh.mudloggingcalculations.MainActivity">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/mudlogging"
+        android:scaleType="fitStart"
+        android:id="@+id/image"/>
+
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:orientation="horizontal"
+        tools:context="com.example.ahmedmamdouh.mudloggingcalculations.MainActivity">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/first_coloumn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:orientation="vertical"
+            tools:context="com.example.ahmedmamdouh.mudloggingcalculations.MainActivity">
+
+            <Button
+                android:id="@+id/conversion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/metal_volume_calc"
+                android:layout_alignTop="@+id/metal_volume_calc"
+                android:layout_marginStart="19dp"
+                android:layout_toEndOf="@+id/metal_volume_calc"
+                android:padding="10dp"
+                android:text="Unit Conversion" />
+
+            <Button
+                android:id="@+id/metal_volume_calc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="260dp"
+                android:padding="20dp"
+                android:text="Metal Volume" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/steel_volume_calc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/first_coloumn"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="0dp"
+            android:padding="25dp"
+            android:text="Displacement Volume" />
+
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="String Weight In mud"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:padding="25dp"
+        android:id="@+id/string_weight"
+
+        />
+
+
+</RelativeLayout>
+

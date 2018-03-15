@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Mud Logging Calculations</string>
+
+    <string-array name="length_array">
+        <item>inches</item>
+        <item>Km</item>
+        <item>m</item>
+        <item>cm</item>
+        <item>mm</item>
+    </string-array>
+
+
+
+
+
+</resources>
+
